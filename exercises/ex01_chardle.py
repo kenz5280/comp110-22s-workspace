@@ -46,7 +46,7 @@ if single_character == word_guess[4]:
 else:
     character_count_4 = 0
 
-character_full_count = int(character_count_0 + character_count_1 + character_count_2 + character_count_3 + character_count_4)
+character_full_count = character_count_0 + character_count_1 + character_count_2 + character_count_3 + character_count_4
 
 if character_full_count == 0:
     character_full_count = "No"
@@ -55,4 +55,3 @@ if character_full_count == 1:
     print(str(character_full_count) + " instance of " + single_character + " found in " + word_guess)
 else:
     print(str(character_full_count) + " instances of " + single_character + " found in " + word_guess)
-    
