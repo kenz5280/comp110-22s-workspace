@@ -55,3 +55,4 @@ if character_full_count == 1:
     print(str(character_full_count) + " instance of " + single_character + " found in " + word_guess)
 else:
     print(str(character_full_count) + " instances of " + single_character + " found in " + word_guess)
+    
