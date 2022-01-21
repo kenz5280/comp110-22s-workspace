@@ -49,9 +49,10 @@ else:
 character_full_count = character_count_0 + character_count_1 + character_count_2 + character_count_3 + character_count_4
 
 if character_full_count == 0:
-    character_full_count = "No"
+    print("No instances of " + single_character + " found in " + word_guess)
 
 if character_full_count == 1:
     print(str(character_full_count) + " instance of " + single_character + " found in " + word_guess)
-else:
+
+if character_full_count > 1:
     print(str(character_full_count) + " instances of " + single_character + " found in " + word_guess)
