@@ -50,11 +50,7 @@ character_full_count = character_count_0 + character_count_1 + character_count_2
 
 if character_full_count == 0:
     print("No instances of " + single_character + " found in " + word_guess)
-
-if character_full_count == 1:
+elif character_full_count == 1:
     print(str(character_full_count) + " instance of " + single_character + " found in " + word_guess)
-
-if character_full_count > 1:
+else:
     print(str(character_full_count) + " instances of " + single_character + " found in " + word_guess)
-
-# can make this nested to make it neater. try this at a later time
