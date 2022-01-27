@@ -56,3 +56,5 @@ if character_full_count == 1:
 
 if character_full_count > 1:
     print(str(character_full_count) + " instances of " + single_character + " found in " + word_guess)
+
+# can make this nested to make it neater. try this at a later time
