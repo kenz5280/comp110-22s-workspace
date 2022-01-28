@@ -15,7 +15,7 @@ index_variable: int = 0
 emoji_result: str = ""
 
 
-while index_variable < len(secret_word):
+while index_variable < len(secret_word) and len(guess) == len(secret_word):
     if guess[index_variable] == secret_word[index_variable]:
         emoji_result = emoji_result + GREEN_BOX
 
