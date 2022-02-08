@@ -1,6 +1,6 @@
 """A complete wordle program using definitons."""
 
-___author___: str = "730489406"
+__author__ = "730489406"
 
 
 def contains_char(guess: str, single_chr: str) -> bool:
