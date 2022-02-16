@@ -1,4 +1,4 @@
-"""A turtle drawing by me. Some beautiful flowers."""
+"""A turtle drawing of a beautiful, multicolored flower."""
 
 __author__ = "730489406"
 
@@ -7,6 +7,8 @@ from turtle import Turtle, colormode, done
 from random import randint
 
 colormode(255)
+
+object: Turtle = Turtle()
 
 
 def stem(stem: Turtle, x: float, y: float) -> Turtle:
@@ -45,7 +47,6 @@ def petal(petal: Turtle, x: float, y: float) -> Turtle:
             petal.forward(1)
             petal.left(1)
             n += 1
-            petal.begin_fill()
             petal.color(red, green, blue)
             petal.fillcolor(red, green, blue)
         petal.end_fill()
@@ -78,6 +79,7 @@ def right_leaf(right_leaf: Turtle, x: float, y: float) -> Turtle:
     """A function drawing a leaf."""
     right_leaf.penup()
     right_leaf.goto(x, y)
+    right_leaf.setheading(350)
     right_leaf.pendown()
     right_leaf.begin_fill()
     right_leaf.fillcolor(10, 61, 26)
@@ -97,6 +99,7 @@ def left_leaf(left_leaf: Turtle, x: float, y: float) -> Turtle:
     """A function drawing a leaf."""
     left_leaf.penup()
     left_leaf.goto(x, y)
+    left_leaf.setheading(10)
     left_leaf.pendown()
     left_leaf.begin_fill()
     left_leaf.fillcolor(10, 61, 26)
@@ -114,13 +117,14 @@ def left_leaf(left_leaf: Turtle, x: float, y: float) -> Turtle:
 
 def main() -> None:
     """Main function."""
-    stem(Turtle(), -5, -30)
-    petal(Turtle(), 0, 0) 
-    center(Turtle(), 0, -12)
-    right_leaf(Turtle(), 2, -205)
-    right_leaf(Turtle(), 2, -255)
-    left_leaf(Turtle(), -5, -150)
-    left_leaf(Turtle(), -5, -225)
+    object.speed(15) 
+    stem(object, -5, -30)
+    petal(object, 0, 0) 
+    center(object, -3, -12)
+    right_leaf(object, 6, -185)
+    left_leaf(object, -5, -150)
+    right_leaf(object, 6, -255)
+    left_leaf(object, -5, -225)
     done()
 
 
