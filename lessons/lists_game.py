@@ -26,8 +26,6 @@ print(f"Total score: {sum}")
 # rolls.append(randint(1, 6))
 # rolls.append(randint(1, 6))
 # print(rolls)
-
-
 # # Acess an individual item
 # print(rolls[0])
 # print(rolls[1])
