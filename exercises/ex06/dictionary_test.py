@@ -23,6 +23,7 @@ def test_invert_no_string() -> None:
 
 
 def test_invert_key_error() -> None:
+    """Tests invert when there is a key error."""
     with pytest.raises(KeyError):
         a_dict = {"red": "black", "blue": "black"}
         invert(a_dict)
