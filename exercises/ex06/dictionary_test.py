@@ -32,7 +32,7 @@ def test_invert_key_error() -> None:
 def test_favorite_color_normal() -> None:
     """Tests favorite_color under normal circumstances."""
     a_dict: dict[str, str] = {"Kenzie": "yellow", "Eli": "green", "Kenna": "green"}
-    assert favorite_color(a_dict) == "green"  
+    assert favorite_color(a_dict) == "green"
 
 
 def test_favorite_color_no_fav() -> None:
