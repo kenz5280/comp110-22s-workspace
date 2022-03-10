@@ -39,11 +39,14 @@ def head(table: dict[str, list[str]], number_rows: int) -> dict[str, list[str]]:
     """A function that produces a new table with only the first N data selected for each column."""
     result: dict[str, list[str]] = {}
     for columns in table:
+        if len(table[columns]) < number_rows:
+            return table
         first_n_values: list[str] = []
         i: int = 0 
-        for i in range(0, number_rows):
+        while i < number_rows:
             first_n_values.append(table[columns][i])
-            result[columns] = first_n_values
+            i += 1
+        result[columns] = first_n_values
     return result
         
 
