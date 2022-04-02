@@ -110,4 +110,3 @@ class Simpy():
                 if rhs[i]:
                     result.append(self.values[i])
             return Simpy(result)
-
