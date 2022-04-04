@@ -10,9 +10,10 @@ __author__ = "YOUR PID HERE"
 
 
 class Simpy():
+    """A class type involving floats."""
     values: list[float]
 
-    def __init__(self, values):
+    def __init__(self, values: list[float]):
         """A constructor method."""
         self.values = values
     
@@ -27,7 +28,7 @@ class Simpy():
             value.append(rep_value)
         self.values = value
         
-    def arange(self, start: float, stop: float, step: float = 1.0):
+    def arange(self, start: float, stop: float, step: float = 1.0) -> None:
         """A range method for floats."""
         value: list[float] = []
         value.append(start)
